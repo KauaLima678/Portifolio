@@ -1,0 +1,119 @@
+.projetos {
+    padding: 100px 50px;
+    overflow: hidden;
+
+    @media (max-width: 500px) {
+    }
+    
+  
+    .gradeProjetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 30px;
+      
+
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .cardProjeto {
+        background-color: #161616;
+        border-radius: 10px;
+        padding: 20px;
+        transition: all 0.5s ease;
+        height: 450px;
+
+        @media (max-width: 500px) {
+          height: 500px;
+          width: 350px;
+        } 
+
+        @media (max-width: 400px) {
+          height: 500px;
+          width: 300px;
+        }
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        .imgProjeto {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          margin-bottom: 20px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+  
+        .infoProjeto {
+
+          @media (max-width: 500px) {
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+          }
+
+          h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+          }
+  
+          p {
+            margin-bottom: 5px;
+            color: #bbb;
+            min-height: 100px;
+          }
+  
+          a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.5s ease;
+            padding: 10px 20px;
+            border: 2px solid #8A00FF;
+            border-radius: 5px;
+  
+            &:hover {
+              color: #fff;
+              background-color: #8A00FF;
+              box-shadow: 0 0 5px #8A00FF, 0 0 25px #8A00FF;
+           }
+          }
+        }
+      }
+    }
+  }
+  
+  .title {
+    margin-bottom: 60px;
+    font-size: 42px;
+    position: relative;
+
+    @media (max-width: 500px) {
+      font-size: 29px;
+      text-align: center;
+    }
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    background-color: #9400d3;
+    width: 100px;
+    height: 2px;
+
+    @media (max-width: 500px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

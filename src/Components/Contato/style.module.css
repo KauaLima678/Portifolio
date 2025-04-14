@@ -1,0 +1,220 @@
+.contato {
+  padding: 100px 0px;
+
+  @media (max-width: 500px) {
+    padding: 50px 19px;
+    margin-top: 30px;
+  }
+
+  .botoesContato {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 500px) {
+      gap: 30px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 400px) {
+      gap: 30px;
+    }
+
+    .whats {
+      background-color: #00ff26;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      min-width: 160px;
+      transition: all 0.3s;
+
+      @media (max-width: 500px) {
+        min-width: 60px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+
+        span{
+          display: none;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #00ff26, 0 0 25px #00ff26;
+      }
+    }
+
+    .insta {
+        background-image: url(https://img.freepik.com/premium-photo/gradient-instagram-color-palatte-background-story-post-banner-social-media-banner-background_609989-4570.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: 500;
+        min-width: 160px;
+        transition: all 0.3s;
+
+        @media (max-width: 500px) {
+          min-width: 60px;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+  
+          span{
+            display: none;
+          }
+        }
+          &:hover {
+              transform: scale(1.05);
+              box-shadow: 0 0 5px  #800080, 0 0 25px red;
+          }
+        }
+
+    .email {
+      background-color: #ff0000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      min-width: 160px;
+      transition: all 0.3s;
+
+      @media (max-width: 500px) {
+        min-width: 60px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+
+        span{
+          display: none;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #ff0000, 0 0 25px #ff0000;
+      }
+    }
+    .github {
+      background-color: #131920;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      min-width: 160px;
+      transition: all 0.3s;
+
+      @media (max-width: 500px) {
+        min-width: 60px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+
+        span{
+          display: none;
+        }
+      }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #15191e, 0 0 25px #131920;
+        }   
+    }
+    .linkedin {
+      background-color: #006195;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      min-width: 160px;
+      transition: all 0.3s;
+
+      @media (max-width: 500px) {
+        min-width: 60px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+
+        span{
+          display: none;
+        }
+      }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #006195, 0 0 25px #006195;
+        }
+
+         .linkedin {
+      background-color: #006195;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      min-width: 160px;
+      transition: all 0.3s;
+
+      @media (max-width: 500px) {
+        min-width: 120px;
+      }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #006195, 0 0 25px #006195;
+        }
+    }
+  }
+}
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 42px;
+  position: relative;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  background-color: #9400d3;
+  width: 180px;
+  height: 2px;
+}

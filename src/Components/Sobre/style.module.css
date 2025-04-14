@@ -1,0 +1,142 @@
+.sobreMim{
+    padding: 0 50px;
+    padding-bottom: 100px;
+    display: flex;
+    margin-top: 50px;
+    min-height: 70vh;
+    flex-direction: column;
+
+    @media (max-width: 500px) {
+      padding: 0px 20px;
+    }
+  
+    .sobre{
+      display: flex;
+      gap: 130px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+
+      @media (max-width: 856px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+      }
+  
+      .contSobre{
+
+        h2{
+          font-size: 25px;
+          margin-bottom: 30px;
+          text-transform: uppercase;
+
+          @media (max-width: 856px) {
+           font-size: 22px;
+           text-align: center;
+          }
+
+          @media (max-width: 485px) {
+            font-size: 20px;
+            text-align: center;
+          }
+  
+          @media (max-width: 345px) {
+            font-size: 17px;
+            text-align: center;
+          }
+        }
+  
+        p{
+          color: #bbb;
+          margin-bottom: 20px;
+
+          @media (max-width: 856px) {
+           text-align: center;
+          }
+        }
+        
+        .habilidades{
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 20px;
+
+          @media (max-width: 856px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+          }
+  
+          span{
+            background-color: #9400d361;
+            color: #ffffff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.5s ease;
+  
+            &:hover{
+              box-shadow: 0 0 5px #9400d3, 0 0 25px #9400d3;
+              background-color: #9400d3;
+              transform: scale(1.05);
+            }
+          }
+        }
+  
+      }
+  
+      .imgSobre{
+        height: 400px;
+        width: 80%;
+        border-radius: 20px;
+
+        @media (max-width: 856px) {
+          height: 300px;
+          width: 400px;
+        }
+
+        @media (max-width: 485px) {
+          height: 250px;
+          width: 300px;
+        }
+
+        @media (max-width: 345px) {
+          height: 200px;
+          width: 200px;
+        }
+      }
+  
+    }
+  
+  }
+
+  .title {
+    margin-bottom: 60px;
+    font-size: 42px;
+    position: relative;
+
+    @media (max-width: 856px) {
+      font-size: 29px;
+      text-align: center;
+    }
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    background-color: #9400d3;
+    width: 100px;
+    height: 2px;
+
+    @media (max-width: 856px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
