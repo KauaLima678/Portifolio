@@ -3,6 +3,7 @@ import Hamburgueria from "../../Imgs/Hamburgueria.png";
 import Jojo from "../../Imgs/Jojo.png";
 import Spotify from "../../Imgs/Spotify.png";
 import Nike from "../../Imgs/Nike.png";
+import Landing from "../../Imgs/Ramen.js.png"
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from "react";
 
@@ -10,11 +11,11 @@ export default function Projetos() {
 
   useEffect(() => {
     ScrollReveal().reveal('.revealProjects', {
-      duration: 1000,
+      duration: 2000,
       distance: '50px',
-      origin: 'left',
+      origin: 'bottom',
       easing: 'ease',
-      interval: 500,
+      interval: 300,
       reset: false,
     });
   }, []);
@@ -27,7 +28,7 @@ export default function Projetos() {
       id: 1,
       nome: "Sr. Burguer",
       descricao:
-        "Projeto de fim de ano feito em PHP com funcionalidades de login, cadastro, atualizar pedidos e muito mais.",
+        "Projeto de fim de ano feito em PHP com funcionalidades de login, cadastro, atualizar pedidos e muito mais. Não responsiva.",
       imagem: Hamburgueria,
       link: "https://github.com/KauaLima678/Sr.-Burguer-Hamburgueria",
     },
@@ -35,7 +36,7 @@ export default function Projetos() {
       id: 2,
       nome: "Jojo Page",
       descricao:
-        "Minha primeira interface desenvolvida em React JS, colocando em prática meus conhecimentos adquiridos.",
+        "Minha primeira interface desenvolvida em React JS, colocando em prática meus conhecimentos adquiridos. Não responsiva.",
       imagem: Jojo,
       link: "https://projeto-jojo-react-mgd3ds9az-kaua-limas-projects-bac59c0b.vercel.app/",
     },
@@ -43,7 +44,7 @@ export default function Projetos() {
       id: 3,
       nome: "Interface Spotify",
       descricao:
-        "Interface desenvolvida em React JS para pôr em prática meus conhecimentos sobre componentização. Esta não é uma página funcional.",
+        "Interface desenvolvida em React JS para pôr em prática meus conhecimentos sobre componentização. Esta não é uma página funcional. Está interface não é responsiva.",
       imagem: Spotify,
       link: "https://projeto-react-spotify.vercel.app",
     },
@@ -51,10 +52,16 @@ export default function Projetos() {
       id: 4,
       nome: "Page Nike",
       descricao:
-        "Projeto desenvolvido em HTML, CSS e JS, colocando em prática meus conhecimentos sobre JavaScript e interfaces confortáveis.",
+        "Projeto desenvolvido em HTML, CSS e JS, colocando em prática meus conhecimentos sobre JavaScript e interfaces confortáveis. Este projeto não é responsivo.",
       imagem: Nike,
       link: "https://kaualima678.github.io/Nike/",
-    },
+    }, {
+      id: 4,
+      nome: "Ramen.Js",
+      descricao: "Landing Page desenvolvidda com HTML, CSS e jQuery a fim de praticar responsividade e efeitos visuais. Não funcional.",
+      imagem: Landing,
+      link: "https://kaualima678.github.io/Ramen.Js/"
+    }
   ];
 
   return (
